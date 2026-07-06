@@ -9,4 +9,7 @@ ios/Flutter/Flutter.podspec
 ml/artifacts/*.joblib
 ml/artifacts/*.json
 !ml/artifacts/.gitkeep
+!ml/artifacts/random_forest_model.joblib
+!ml/artifacts/model_metadata.json
+ml/artifacts/transactions_backup.json
 

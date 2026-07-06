@@ -1,0 +1,37 @@
+{
+  "model_version": "rf-rolling-30d-v1",
+  "trained_at": "2026-06-18T11:13:12.118057+00:00",
+  "dataset": "ml\\data\\daily_coffee_expenses.csv",
+  "generated_training_dataset": "ml\\data\\hero_coffee_rolling_30d_expenses.csv",
+  "approach": "rolling_window_30_days_to_next_30_days",
+  "window_days": 30,
+  "rows": 671,
+  "train_rows": 536,
+  "test_rows": 135,
+  "features": [
+    "month_index",
+    "raw_materials",
+    "salaries",
+    "electricity",
+    "water",
+    "rent",
+    "promotion",
+    "operations"
+  ],
+  "target": "total_expense",
+  "metrics": {
+    "mae": 1979641.95,
+    "rmse": 2263966.04,
+    "mape": 3.16
+  },
+  "feature_importance": {
+    "month_index": 0.9369,
+    "water": 0.0236,
+    "raw_materials": 0.0135,
+    "promotion": 0.0101,
+    "electricity": 0.0057,
+    "rent": 0.0051,
+    "salaries": 0.0041,
+    "operations": 0.001
+  }
+}
